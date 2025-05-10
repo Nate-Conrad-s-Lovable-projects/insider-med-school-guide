@@ -1,0 +1,23 @@
+
+/* MCAT Prep page styles */
+.content-section {
+  margin-bottom: 30px;
+}
+
+.info-box {
+  background-color: var(--bg-light);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.guidance-box {
+  border-top: 1px solid var(--border-color);
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.button-center {
+  text-align: center;
+  margin-top: 20px;
+}
