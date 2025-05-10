@@ -176,7 +176,6 @@ nav {
 .hero {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 80px 0;
-  text-align: center;
 }
 
 .hero-content {
@@ -291,7 +290,7 @@ nav {
 }
 
 .testimonial:before {
-  content: """;
+  content: "\201C";
   font-size: 4rem;
   font-family: Georgia, serif;
   position: absolute;
@@ -369,15 +368,16 @@ footer {
   color: #bbb;
 }
 
-.footer-links h3 {
+.footer-heading {
   margin-bottom: 20px;
   color: #fff;
   font-size: 1.2rem;
 }
 
-.footer-links ul {
+.footer-links {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links li {
@@ -404,11 +404,14 @@ footer {
 
 .footer-form {
   display: flex;
+  flex-direction: column;
 }
 
 .footer-form input {
-  flex-grow: 1;
-  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
 }
 
 /* Grid System */
@@ -456,11 +459,15 @@ footer {
   color: var(--primary-color);
 }
 
-.text-accent {
-  color: var(--accent-color);
+.text-danger {
+  color: #ea384c;
 }
 
 .bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-light-blue {
   background-color: var(--bg-light);
 }
 
@@ -504,6 +511,70 @@ footer {
 
 .rounded {
   border-radius: 4px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.emphasis {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.text-content p {
+  margin-bottom: 1rem;
+}
+
+.content-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.divider {
+  height: 1px;
+  width: 100px;
+  background-color: var(--primary-color);
+  margin: 25px auto;
+}
+
+.signature-img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.signature-text {
+  font-style: italic;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* Responsive Styles */
@@ -552,30 +623,76 @@ footer {
     max-width: 100%;
   }
   
-  .footer-container {
-    grid-template-columns: 1fr;
+  .hero-buttons {
+    flex-direction: column;
+  }
+  
+  .footer-form {
+    width: 100%;
+  }
+  
+  .testimonial {
+    padding: 15px;
+  }
+  
+  .testimonial:before {
+    font-size: 3rem;
   }
 }
 
-/* MCAT Prep page styles */
-.content-section {
+/* New styles for block layout */
+.content-block {
   margin-bottom: 30px;
-}
-
-.info-box {
-  background-color: var(--bg-light);
-  padding: 25px;
+  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
-  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.guidance-box {
-  border-top: 1px solid var(--border-color);
-  padding-top: 30px;
-  margin-top: 30px;
+.content-block h3 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.button-center {
+/* Common page styles */
+.page-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 60px 0;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.page-hero h1 {
+  margin-bottom: 15px;
+}
+
+.page-content {
+  padding: 0 0 60px;
+}
+
+/* Lists styling */
+.styled-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.styled-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.styled-list li:before {
+  content: "✓";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Images */
+.rounded-img {
+  border-radius: 8px;
+  width: 100%;
 }

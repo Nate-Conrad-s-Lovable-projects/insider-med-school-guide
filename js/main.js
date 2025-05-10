@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Close mobile menu when clicking outside
   document.addEventListener('click', function(event) {
     const isClickInsideNav = event.target.closest('#main-nav');
-    if (!isClickInsideNav && navLinks.classList.contains('show')) {
+    if (!isClickInsideNav && navLinks && navLinks.classList.contains('show')) {
       navLinks.classList.remove('show');
     }
   });
@@ -57,4 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
   if (footerForm) {
     footerForm.addEventListener('submit', handleFormSubmit);
   }
+
+  // Add active class to current page in navigation
+  const currentPage = window.location.pathname.split('/').pop();
+  const navLinks2 = document.querySelectorAll('.nav-links a');
+  
+  navLinks2.forEach(link => {
+    const linkHref = link.getAttribute('href');
+    if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
 });
