@@ -1,4 +1,3 @@
-
 /* Global Styles */
 :root {
   --primary-color: #0056b3;
@@ -1039,3 +1038,145 @@ p {
     text-align: center;
   }
 }
+
+/* Improved row alignment for desktop */
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -15px 20px;
+  }
+  
+  /* Ensure images have proper spacing */
+  .content-image.styled-img {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Ensure columns maintain proper alignment */
+  .col, .col-md-6, .col-md-4, .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Text columns should align to the left */
+  .col-md-8 {
+    text-align: left;
+  }
+  
+  /* Image columns should center their content */
+  .col-md-4 {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Improved spacing between columns */
+  .col + .col {
+    margin-left: 0;
+  }
+}
+
+/* Enhanced image styling */
+.styled-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.styled-img:hover {
+  transform: translateY(-5px);
+}
+
+/* Content images should be properly sized */
+.content-image.styled-img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Ensure the content blocks have proper spacing */
+.content-block, .info-box {
+  margin-bottom: 30px;
+  overflow: hidden; /* Clear floats */
+}
+
+/* Clear internal floats */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Fix image sizing in columns */
+@media (min-width: 768px) {
+  .col-md-4 .content-image.styled-img {
+    max-width: 90%;
+  }
+}
+
+/* Additional styles for MCAT page */
+.course-comparison {
+  margin-top: 30px;
+}
+
+.course-comparison h3 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px 5px 0 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: var(--bg-light);
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.winner {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.promo-banner {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo-banner:hover {
+  transform: translateY(-5px);
+}
+
+/* Special callout boxes */
+.callout {
+  border-left: 4px solid var(--accent-color);
+  background-color: rgba(255, 107, 0, 0.05);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius:
