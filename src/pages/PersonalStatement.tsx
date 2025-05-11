@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -23,19 +22,32 @@ const PersonalStatement = () => {
       <section className="py-12">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
+            {/* Introduction */}
             <div className="mb-8">
-              <p className="mb-4">
-                The medical school personal statement can strike fear into the heart of the medical school applicant.
-              </p>
-              <p className="mb-4">
-                However, it does not have to be that way! Think of this as your chance to set yourself apart from 
-                other medical students. With at little bit of work, your personal statement for medical school can 
-                tell the medical school admissions committee who you are and why they should want you.
-              </p>
-              <p className="mb-6">
-                Remember, however, that there are many factors that medical schools are looking for in choosing an applicant. 
-                You need to understand all the things that schools are looking for to make your dream of becoming a doctor a reality.
-              </p>
+              <div className="md:flex md:gap-6 md:items-start mb-6">
+                <div className="md:flex-1">
+                  <p className="mb-4">
+                    The medical school personal statement can strike fear into the heart of the medical school applicant.
+                  </p>
+                  <p className="mb-4">
+                    However, it does not have to be that way! Think of this as your chance to set yourself apart from 
+                    other medical students. With at little bit of work, your personal statement for medical school can 
+                    tell the medical school admissions committee who you are and why they should want you.
+                  </p>
+                  <p className="mb-4">
+                    Remember, however, that there are many factors that medical schools are looking for in choosing an applicant. 
+                    You need to understand all the things that schools are looking for to make your dream of becoming a doctor a reality.
+                  </p>
+                </div>
+                <div className="md:w-1/3 mb-4 md:mb-0 flex justify-center">
+                  <img 
+                    src="/public/lovable-uploads/ed170e1e-721e-4c88-8c5e-e52440670ff6.png" 
+                    alt="Medical school application" 
+                    className="styled-img max-w-full md:max-w-[240px]" 
+                  />
+                </div>
+              </div>
+              
               <p className="mb-4">
                 <Link to="/admissions-secrets" className="text-primary underline">
                   Click here to learn what it takes (in addition to a great medical school essay) to get accepted to medical school.
@@ -71,41 +83,63 @@ const PersonalStatement = () => {
 
             {/* CTA Box */}
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mb-10">
-              <p className="mb-4">
-                Below are some rules to follow to make your medical school admission essay stand out.
-              </p>
-              <p className="mb-4">
-                If after going through these rules you find that you would like some more medical school essay help,
-                editing of your statement is available by MedSchoolCoach.
-              </p>
-              <p className="mb-4">
-                MedSchoolCoach is the company I recommend for medical school personal statement help as well as 
-                admissions advising. They are all former admissions committee members, which means they know exactly 
-                what schools are looking for and what it takes to be accepted. Their rates are also very reasonable 
-                compared to other companies. 
-              </p>
-              <p className="font-medium">
-                Consulting can cost some money, but think of it as an investment. Whatever you spend now will get you 
-                $150,000 to $500,000 for 30+ years, doing something you love. Not a bad return on investment!
-              </p>
+              <div className="md:flex md:gap-6 md:items-center">
+                <div className="md:flex-1">
+                  <p className="mb-4">
+                    Below are some rules to follow to make your medical school admission essay stand out.
+                  </p>
+                  <p className="mb-4">
+                    If after going through these rules you find that you would like some more medical school essay help,
+                    editing of your statement is available by MedSchoolCoach.
+                  </p>
+                  <p className="mb-4">
+                    MedSchoolCoach is the company I recommend for medical school personal statement help as well as 
+                    admissions advising. They are all former admissions committee members, which means they know exactly 
+                    what schools are looking for and what it takes to be accepted. Their rates are also very reasonable 
+                    compared to other companies. 
+                  </p>
+                  <p className="font-medium">
+                    Consulting can cost some money, but think of it as an investment. Whatever you spend now will get you 
+                    $150,000 to $500,000 for 30+ years, doing something you love. Not a bad return on investment!
+                  </p>
+                </div>
+                <div className="md:w-1/3 mt-4 md:mt-0 flex justify-center">
+                  <img 
+                    src="/public/lovable-uploads/5b5eca8f-6618-4cdb-80d1-f328fc39d138.png" 
+                    alt="Dr. Mike Frazier" 
+                    className="styled-img max-w-full md:max-w-[220px]" 
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Inside Track Promo */}
             <div className="bg-gray-50 p-6 rounded-lg mb-10">
-              <p className="mb-4">
-                If you're looking for something that's more than a book, (which you can pick up here for lots of tips about 
-                getting into medical school) but less expensive than 1 on 1 advising and editing services, check out my 
-                new members only site, Medical School Inside Track.
-              </p>
-              <h3 className="text-lg font-bold mb-3">Inside you'll find:</h3>
-              <ul className="list-disc ml-6 space-y-2 mb-6">
-                <li>Videos describing the entire admissions process, from choosing to apply to choosing between multiple acceptances</li>
-                <li>A custom tool to know your chances based on MCAT, GPA and race</li>
-                <li>A custom tool to know exactly where to apply based on MCAT, GPA and state of residence</li>
-                <li>Examples from successful applicants of AMCAS activities, personal statements, secondary essays, descriptions of hardship and descriptions of disciplinary actions</li>
-                <li>4 hours of recorded interview prep to learn what it takes to ace an interview</li>
-                <li>And much more! All for less than the cost of 1 hour of one on one advising.</li>
-              </ul>
+              <div className="md:flex md:gap-6 md:items-center">
+                <div className="md:flex-1">
+                  <p className="mb-4">
+                    If you're looking for something that's more than a book, (which you can pick up here for lots of tips about 
+                    getting into medical school) but less expensive than 1 on 1 advising and editing services, check out my 
+                    new members only site, Medical School Inside Track.
+                  </p>
+                  <h3 className="text-lg font-bold mb-3">Inside you'll find:</h3>
+                  <ul className="list-disc ml-6 space-y-2 mb-6">
+                    <li>Videos describing the entire admissions process, from choosing to apply to choosing between multiple acceptances</li>
+                    <li>A custom tool to know your chances based on MCAT, GPA and race</li>
+                    <li>A custom tool to know exactly where to apply based on MCAT, GPA and state of residence</li>
+                    <li>Examples from successful applicants of AMCAS activities, personal statements, secondary essays, descriptions of hardship and descriptions of disciplinary actions</li>
+                    <li>4 hours of recorded interview prep to learn what it takes to ace an interview</li>
+                    <li>And much more! All for less than the cost of 1 hour of one on one advising.</li>
+                  </ul>
+                </div>
+                <div className="md:w-1/3 mt-4 md:mt-0 flex justify-center">
+                  <img 
+                    src="/public/lovable-uploads/17ec88e1-f0d0-4c07-bbf7-661fc64ddf3b.png" 
+                    alt="10 Steps to Accepted eBook" 
+                    className="styled-img max-w-full md:max-w-[200px]" 
+                  />
+                </div>
+              </div>
               <div className="text-center">
                 <button className="btn-primary">Check it out here</button>
               </div>
@@ -116,52 +150,73 @@ const PersonalStatement = () => {
               <h2 className="text-2xl font-bold mb-6">Rules for an Outstanding Personal Statement</h2>
               
               <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-bold text-primary mb-3">Rule #1: Show, Don't Tell</h3>
-                  <p className="mb-4">
-                    A common theme in the medical school personal statement is "I want to be a doctor because I want to help people." 
-                    This is probably true, but the problem is this: anyone can say that, and most applicants do say that. You need 
-                    to show me why that's true. What experience did you have that made you want to help people? Likewise, don't 
-                    just say that you've done research or community service. Tell a story only you can tell about it and what it 
-                    taught you that will make you a good doctor.
-                  </p>
-                  <div className="bg-gray-50 p-4 rounded-lg mb-4">
-                    <p className="font-bold mb-2">Here's part of a sample medical school essay that shows that you want to help people:</p>
-                    <p className="italic">
-                      I could smell the rotting garbage in the streets. I was far from home in my third week in Guatemala as part 
-                      of a medical mission. The people were so poor, but so grateful. I was working with Pedro, bandaging a cut on 
-                      his hand after an accident sharpening his machete. He looked up at me and said "Gracias, amigo." Those simple 
-                      words lifted my spirits. My work here was making a difference, small as it might be. I want to continue to make 
-                      that difference and feel the joy of helping others through a career in medicine.
+                {/* Rule 1 */}
+                <div className="md:flex md:gap-6 md:items-start">
+                  <div className="md:flex-1">
+                    <h3 className="text-xl font-bold text-primary mb-3">Rule #1: Show, Don't Tell</h3>
+                    <p className="mb-4">
+                      A common theme in the medical school personal statement is "I want to be a doctor because I want to help people." 
+                      This is probably true, but the problem is this: anyone can say that, and most applicants do say that. You need 
+                      to show me why that's true. What experience did you have that made you want to help people? Likewise, don't 
+                      just say that you've done research or community service. Tell a story only you can tell about it and what it 
+                      taught you that will make you a good doctor.
+                    </p>
+                    <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                      <p className="font-bold mb-2">Here's part of a sample medical school essay that shows that you want to help people:</p>
+                      <p className="italic">
+                        I could smell the rotting garbage in the streets. I was far from home in my third week in Guatemala as part 
+                        of a medical mission. The people were so poor, but so grateful. I was working with Pedro, bandaging a cut on 
+                        his hand after an accident sharpening his machete. He looked up at me and said "Gracias, amigo." Those simple 
+                        words lifted my spirits. My work here was making a difference, small as it might be. I want to continue to make 
+                        that difference and feel the joy of helping others through a career in medicine.
+                      </p>
+                    </div>
+                    <p>
+                      What's good about this: It shows that you want to help people by your experience and it's an experience that 
+                      only you had. Individuality is the key to the medical school personal statement.
                     </p>
                   </div>
-                  <p>
-                    What's good about this: It shows that you want to help people by your experience and it's an experience that 
-                    only you had. Individuality is the key to the medical school personal statement.
-                  </p>
+                  <div className="md:w-1/3 mt-4 md:mt-0 flex justify-center">
+                    <img 
+                      src="/public/lovable-uploads/336e6a2c-c19d-475f-9c0a-f40b72f625f4.png" 
+                      alt="Medical students volunteering" 
+                      className="styled-img max-w-full md:max-w-[220px]" 
+                    />
+                  </div>
                 </div>
                 
-                <div>
-                  <h3 className="text-xl font-bold text-primary mb-3">Rule #2: It's story time</h3>
-                  <p className="mb-4">
-                    This goes along with show don't tell, but your medical school personal statement should be a collection of your 
-                    experiences and what they taught you. Those experiences should have taught you things that will make you a good doctor. 
-                  </p>
-                  <p className="mb-4">
-                    Remember to think from the perspective of the reader. The reader wants to know who you are and that you have developed 
-                    certain character traits through your experiences. These should include things like service, compassion, integrity, 
-                    dedication, diligence, tenacity, leadership, etc.
-                  </p>
-                  <p className="mb-4">
-                    Everyone will be trying to show that they have those qualities, but you will have the advantage because you will
-                    show the reader by your experiences that you have those qualities.
-                  </p>
-                  <p>
-                    Tell a story, then tell what it taught you. How will that lesson make you a good doctor? This is what will make your 
-                    personal statement for medical school stand out.
-                  </p>
+                {/* Rule 2 */}
+                <div className="md:flex md:gap-6 md:items-start">
+                  <div className="md:flex-1">
+                    <h3 className="text-xl font-bold text-primary mb-3">Rule #2: It's story time</h3>
+                    <p className="mb-4">
+                      This goes along with show don't tell, but your medical school personal statement should be a collection of your 
+                      experiences and what they taught you. Those experiences should have taught you things that will make you a good doctor. 
+                    </p>
+                    <p className="mb-4">
+                      Remember to think from the perspective of the reader. The reader wants to know who you are and that you have developed 
+                      certain character traits through your experiences. These should include things like service, compassion, integrity, 
+                      dedication, diligence, tenacity, leadership, etc.
+                    </p>
+                    <p className="mb-4">
+                      Everyone will be trying to show that they have those qualities, but you will have the advantage because you will
+                      show the reader by your experiences that you have those qualities.
+                    </p>
+                    <p>
+                      Tell a story, then tell what it taught you. How will that lesson make you a good doctor? This is what will make your 
+                      personal statement for medical school stand out.
+                    </p>
+                  </div>
+                  <div className="md:w-1/3 mt-4 md:mt-0 flex justify-center">
+                    <img 
+                      src="/public/lovable-uploads/a624ead4-be83-441d-80e7-7fc5614c7f19.png" 
+                      alt="Medical school competition" 
+                      className="styled-img max-w-full md:max-w-[220px]" 
+                    />
+                  </div>
                 </div>
                 
+                {/* Keep the remaining rules */}
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-3">Rule #3: Make it entertaining. If you're not having fun writing it, they're not having fun reading it!</h3>
                   <p className="mb-4">
@@ -342,16 +397,27 @@ const PersonalStatement = () => {
             {/* Professional Editing Services */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold mb-6">Using professional editing services</h2>
-              <p className="mb-4">
-                As I said above, there are many medical school personal statement editing services available online and even through 
-                your college. You can use your premed office or many schools have a writing center where people who are good writers 
-                can review your statement.
-              </p>
-              <p className="mb-6">
-                However, your personal statement for medical school should not be something you leave to
-                chance. Your best bet is to work with someone who has experience with the medical school personal statement from the 
-                other side of the admissions table. As I said above, the company I recommend for medical school essay help is MedSchoolCoach.
-              </p>
+              <div className="md:flex md:gap-6 md:items-center">
+                <div className="md:flex-1">
+                  <p className="mb-4">
+                    As I said above, there are many medical school personal statement editing services available online and even through 
+                    your college. You can use your premed office or many schools have a writing center where people who are good writers 
+                    can review your statement.
+                  </p>
+                  <p className="mb-6">
+                    However, your personal statement for medical school should not be something you leave to
+                    chance. Your best bet is to work with someone who has experience with the medical school personal statement from the 
+                    other side of the admissions table. As I said above, the company I recommend for medical school essay help is MedSchoolCoach.
+                  </p>
+                </div>
+                <div className="md:w-1/3 mt-4 md:mt-0 flex justify-center">
+                  <img 
+                    src="/public/lovable-uploads/41609bf1-bba6-466f-87cf-5bc387604184.png" 
+                    alt="Editing services" 
+                    className="styled-img max-w-full md:max-w-[220px]" 
+                  />
+                </div>
+              </div>
               <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mb-6">
                 <p className="mb-4">
                   The reason I like this company is because they are all doctors who have had experience on a medical school admissions committee. 
@@ -373,25 +439,37 @@ const PersonalStatement = () => {
 
             {/* Final CTA */}
             <div className="bg-gray-50 p-6 rounded-lg mb-12">
-              <p className="mb-4">
-                If you're looking for something that's more than a book, (which you can pick up here for lots of tips about getting into 
-                medical school) but less expensive than 1 on 1 advising and editing services, check out my new members only site, 
-                Medical School Inside Track.
-              </p>
-              <h3 className="text-lg font-bold mb-3">Inside you'll find:</h3>
-              <ul className="list-disc ml-6 space-y-2 mb-6">
-                <li>Videos describing the entire admissions process, from choosing to apply to choosing between multiple acceptances</li>
-                <li>A custom tool to know your chances based on MCAT, GPA and race</li>
-                <li>A custom tool to know exactly where to apply based on MCAT, GPA and state of residence</li>
-                <li>Examples from successful applicants of AMCAS activities, personal statements, secondary essays, descriptions of hardship and descriptions of disciplinary actions</li>
-                <li>4 hours of recorded interview prep to learn what it takes to ace an interview</li>
-                <li>And much more! All for less than the cost of 1 hour of one on one advising.</li>
-              </ul>
+              <div className="md:flex md:gap-6 md:items-center">
+                <div className="md:flex-1">
+                  <p className="mb-4">
+                    If you're looking for something that's more than a book, (which you can pick up here for lots of tips about getting into 
+                    medical school) but less expensive than 1 on 1 advising and editing services, check out my new members only site, 
+                    Medical School Inside Track.
+                  </p>
+                  <h3 className="text-lg font-bold mb-3">Inside you'll find:</h3>
+                  <ul className="list-disc ml-6 space-y-2 mb-6">
+                    <li>Videos describing the entire admissions process, from choosing to apply to choosing between multiple acceptances</li>
+                    <li>A custom tool to know your chances based on MCAT, GPA and race</li>
+                    <li>A custom tool to know exactly where to apply based on MCAT, GPA and state of residence</li>
+                    <li>Examples from successful applicants of AMCAS activities, personal statements, secondary essays, descriptions of hardship and descriptions of disciplinary actions</li>
+                    <li>4 hours of recorded interview prep to learn what it takes to ace an interview</li>
+                    <li>And much more! All for less than the cost of 1 hour of one on one advising.</li>
+                  </ul>
+                </div>
+                <div className="md:w-1/3 mt-4 md:mt-0 flex justify-center">
+                  <img 
+                    src="/public/lovable-uploads/17ec88e1-f0d0-4c07-bbf7-661fc64ddf3b.png" 
+                    alt="10 Steps to Accepted eBook" 
+                    className="styled-img max-w-full md:max-w-[200px]" 
+                  />
+                </div>
+              </div>
               <div className="text-center">
                 <button className="btn-primary">Check it out here</button>
               </div>
             </div>
 
+            {/* Footer links */}
             <div className="text-center">
               <p className="mb-3">
                 <Link to="/interview-tips" className="text-primary underline">
