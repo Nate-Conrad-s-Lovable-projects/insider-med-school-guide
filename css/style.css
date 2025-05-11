@@ -751,3 +751,211 @@ p {
 .button-center, .hero-buttons, .text-center .btn {
   margin: 20px 5px; /* Add more spacing around buttons */
 }
+
+/* New Image Styling */
+.styled-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-image.styled-img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.rounded-img.styled-img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-thumbnail {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.video-title {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.signature-img {
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+/* Updated Button Containers - add some spacing */
+.button-center, .hero-buttons, .text-center .btn {
+  margin: 20px 5px; /* Add more spacing around buttons */
+}
+
+/* Mobile Optimizations for Images */
+@media (max-width: 768px) {
+  .hero-image.styled-img,
+  .rounded-img.styled-img {
+    max-width: 100%;
+  }
+  
+  .video-thumbnail {
+    max-width: 90%;
+  }
+  
+  .signature-img {
+    max-width: 180px;
+  }
+  
+  /* Center align headings on mobile */
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  
+  .header-container {
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .col-6, .col-4, .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+  }
+  
+  .footer-form {
+    width: 100%;
+  }
+  
+  .testimonial {
+    padding: 15px;
+  }
+  
+  .testimonial:before {
+    font-size: 3rem;
+  }
+}
+
+/* New styles for block layout */
+.content-block {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.content-block h3 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Common page styles */
+.page-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 60px var(--side-padding);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-hero h1 {
+  margin-bottom: 15px;
+}
+
+.page-content {
+  padding: 0 0 60px;
+}
+
+/* Lists styling */
+.styled-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.styled-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.styled-list li:before {
+  content: "✓";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Images */
+.rounded-img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Ensure content doesn't overflow on mobile */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for buttons extending to edge */
+.btn {
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* Make sure content blocks respect padding */
+.content-block, .info-box, .card, .testimonial {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 30px; /* Increased horizontal padding from 25px to 30px */
+}
+
+/* Ensure padding consistency in nested containers */
+.container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Improve paragraph readability with proper spacing */
+p {
+  margin-bottom: 1.5rem;
+  padding: 0 5px; /* Small padding to prevent text from touching edges */
+}
+
+/* Button containers - add some spacing */
+.button-center, .hero-buttons, .text-center .btn {
+  margin: 20px 5px; /* Add more spacing around buttons */
+}
