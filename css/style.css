@@ -898,12 +898,6 @@ p {
   margin: 0 auto 20px;
 }
 
-@media (max-width: 768px) {
-  .content-image.styled-img {
-    max-width: 250px;
-  }
-}
-
 /* Additional styles for MCAT page */
 .course-comparison {
   margin-top: 30px;
@@ -999,5 +993,49 @@ p {
   .col {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  
+  /* Enhanced image alignments for desktop */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Better image positioning on desktop */
+  .content-image.styled-img {
+    margin: 0;
+  }
+  
+  .col-md-4 .content-image.styled-img {
+    margin: 0 auto;
+  }
+  
+  /* Improved spacing between text and images */
+  .col-md-8 + .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Give images some breathing room */
+  .content-image.styled-img {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-image.styled-img {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+  
+  /* Center images on mobile */
+  .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
