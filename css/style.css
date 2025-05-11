@@ -1,3 +1,4 @@
+
 /* Global Styles */
 :root {
   --primary-color: #0056b3;
@@ -7,8 +8,8 @@
   --border-color: #ddd;
   --heading-font: 'Merriweather', serif;
   --body-font: 'Open Sans', sans-serif;
-  --side-padding-left: 25px; /* Left padding */
-  --side-padding-right: 35px; /* Increased right padding */
+  --side-padding-left: 20px; /* Reduced left padding */
+  --side-padding-right: 40px; /* Increased right padding */
 }
 
 body {
@@ -619,10 +620,38 @@ footer {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Image styling */
+.content-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+.styled-img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.styled-img:hover {
+  transform: translateY(-5px);
+}
+
+/* Form Container */
+.form-container {
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.signup-form {
+  max-width: 100%;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   :root {
-    --side-padding-left: 20px;
+    --side-padding-left: 15px;
     --side-padding-right: 30px;
   }
   
@@ -819,127 +848,85 @@ p {
 .content-image.styled-img {
   max-width: 90%;
   display: block;
-  margin: 0 auto;
-}
-
-.signature-img {
-  height: auto;
-  max-width: 200px;
-  margin: 20px auto;
-  display: block;
-}
-
-.signature-text {
-  font-style: italic;
-  margin-top: 10px;
-}
-
-.disclaimer {
-  font-size: 0.85rem;
-  color: #777;
-  text-align: center;
-  padding: 20px var(--side-padding-left) 20px var(--side-padding-right);
-  background-color: #f9f9f9;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-/* Content blocks with better padding */
-.content-block, .info-box, .card, .testimonial {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 25px 35px; /* Increased right padding */
-}
-
-/* Responsive Styles */
-@media (max-width: 992px) {
-  :root {
-    --side-padding-left: 20px;
-    --side-padding-right: 30px;
-  }
-  
-  .hero {
-    padding: 60px var(--side-padding-left) 60px var(--side-padding-right);
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.75rem;
-  }
+  margin: 0 auto 20px;
 }
 
 @media (max-width: 768px) {
-  :root {
-    --side-padding-left: 15px;
-    --side-padding-right: 25px;
-  }
-  
-  /* Center align headings on mobile */
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
-  
-  .header-container {
-    flex-wrap: wrap;
-  }
-  
-  .nav-links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-  
-  .nav-links.show {
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin: 10px 0;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .mobile-menu-btn {
-    display: block;
-  }
-  
-  .col-md-6, .col-md-4, .col-md-8 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-form {
-    width: 100%;
-  }
-  
-  .testimonial {
-    padding: 20px;
-  }
-  
-  .testimonial:before {
-    font-size: 3rem;
-  }
-  
-  /* Better spacing for content images on mobile */
   .content-image.styled-img {
-    max-width: 80%;
-    margin: 0 auto 30px;
+    max-width: 250px;
   }
+}
+
+/* Additional styles for MCAT page */
+.course-comparison {
+  margin-top: 30px;
+}
+
+.course-comparison h3 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px 5px 0 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: var(--bg-light);
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.winner {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.promo-banner {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo-banner:hover {
+  transform: translateY(-5px);
+}
+
+/* Special callout boxes */
+.callout {
+  border-left: 4px solid var(--accent-color);
+  background-color: rgba(255, 107, 0, 0.05);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.callout-title {
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.italic {
+  font-style: italic;
 }
